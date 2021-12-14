@@ -35,6 +35,8 @@ public class LoginTests extends TestBase {
 
         step("Check successful autorization", () -> {
             switchTo().window(0);
+//            $("#user_menu_container").shouldHave(Condition.text(App.config.userLogin()));
+            $(".b-link_icon_user-profile").click();
             $("#user_menu_container").shouldHave(Condition.text(App.config.userLogin()));
         });
     }
