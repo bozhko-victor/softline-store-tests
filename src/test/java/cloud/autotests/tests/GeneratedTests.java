@@ -2,6 +2,7 @@ package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
 import io.qameta.allure.Description;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +13,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class GeneratedTests extends TestBase {
+
     @Test
+    @Disabled
     @Description("Soon to be implemented by you (or QA.GURU engineers)")
     @DisplayName("softline-store")
     void generatedTest() {
