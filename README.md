@@ -1,52 +1,8 @@
-# Project in Allure TestOps with manual & automated tests
-<a target="_blank" href="https://allure.autotests.cloud/project/%s">allure.autotests.cloud/project/%s</a> (ask admin@qa.guru for access)
 
-# Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/%s">jenkins.autotests.cloud/job/%s</a>
+# Проект по автоматизации тестирования интернет-магазина
 
 
-# USAGE examples
-
-### For run remote tests need fill remote.properties or to pass value:
-
-* browser (default chrome)
-* browserVersion (default 89.0)
-* browserSize (default 1920x1080)
-* browserMobileView (mobile device name, for example iPhone X)
-* remoteDriverUrl (url address from selenoid or grid)
-* videoStorage (url address where you should get video)
-* threads (number of threads)
-
-
-Run tests with filled remote.properties:
-```bash
-gradle clean test
-```
-
-Run tests with not filled remote.properties:
-```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
-```
-
-Serve report:
-```bash
-allure serve build/allure-results
-```
-
-
-###### For further development there are some example tests in src/test/java/cloud.autotests/tests/demowebshop
-* remove @Disabled("...") annotation to run tests
-```bash
-gradle clean demowebshop
-```
-
-:heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
-:blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
-
-# Автоматизация тестирования
-
-
-## :atom: Стек
+## Используемый стек технологий:
 
 
 <p align="center">
@@ -65,9 +21,18 @@ gradle clean demowebshop
 <img width="5%" title="Telegram" src="img/Telegram.svg">
 </p>
 
-## :desktop_computer: Запуск тестов из командной строки
+## Автотестами покрыт следующий функционал:
+* UI тесты
+    * Проверки (позитивная и негативные) авторизации зарегистрированного пользователя
+    * Проверка успешности добавления товара в корзину
+    * Проверка поиска товара в каталоге по его наименованию
+    * Проверка наличия заголовка страницы
+    * Проверка на отсутствие ошибок в логах страницы 
 
-Запуск тестов с remote.properties:
+
+## Параметры для запуска тестов
+
+Запуск тестов локально:
 ```bash
 gradle clean test
 ```
@@ -98,17 +63,49 @@ Allure отчет:
 allure serve build/allure-results
 ```
 
+### Создание параметризованной сборки в Jenkins
+
+<p align="center">
+  <img src="img/story/jenkins.png">
+</p>
+
+
+### Видео о прохождении тестов
+
+### Отчёт о прохождении автотестов в Allure Report
+
+<p align="center">
+  <img src="img/story/allure_1.png">
+</p>
+
+### Список автотестов в Allure Report
+
+### Совместное управление ручным и автоматизированным тестированием в TMS Allure TestOps
+
+<p align="center">
+  <img src="img/story/testops.png">
+</p>
+
+### Интерграция Allure TestOps с Jira
+
+<p align="center">
+  <img src="img/story/jira.png">
+</p>
+
+### Уведомления о прохождении автотестов через Telegram бота
+
+<p align="center">
+  <img src="img/story/telegram.png">
+</p>
+
+
+
 ### Автотесты можно запустить из Jenkins
 
 <p align="center">
   <img src="img/story/story_jenkins.png">
 </p>
 
-### О пройденных тестах приходит уведомление через Telegram бота
-
-<p align="center">
-  <img src="img/story/story_telegram.png">
-</p>
 
 ### Allure отчет о пройденных тестах можно посмотреть из Jenkins или через бота
 
