@@ -72,13 +72,21 @@ allure serve build/allure-results
 
 ### Видео о прохождении тестов
 
+<p align="center">
+  <img src="img/story/video.gif" alt="video" width="1000">
+</p>
+
 ### Отчёт о прохождении автотестов в Allure Report
 
 <p align="center">
   <img src="img/story/allure_1.png">
 </p>
 
-### Список автотестов в Allure Report
+### Каждый отдельный тест можно посмотреть по шагам, присутствуют логи/видео/снапшот
+
+<p align="center">
+  <img src="img/story/allure_3.png">
+</p>
 
 ### Совместное управление ручным и автоматизированным тестированием в TMS Allure TestOps
 
@@ -100,39 +108,4 @@ allure serve build/allure-results
 
 
 
-### Автотесты можно запустить из Jenkins
 
-<p align="center">
-  <img src="img/story/story_jenkins.png">
-</p>
-
-
-### Allure отчет о пройденных тестах можно посмотреть из Jenkins или через бота
-
-<p align="center">
-  <img src="img/story/story_allure_report1.png">
-</p>
-
-### Каждый отдельный тест можно посмотреть по шагам, присутствуют логи/видео/снапшот
-
-<p align="center">
-  <img src="img/story/story_allure_report2.png">
-</p>
-
-### Генерируется отчет и для Allure TestOps
-
-<p align="center">
-  <img src="img/story/story_allure_testops1.png">
-</p>
-
-### Интеграция с Jira через Allure TestOps
-
-<p align="center">
-  <img src="img/story/story_jira.png">
-</p>
-
-## <img width="4%" title="Selenoid" src="img/Selenoid.svg"> Как запускается тест в Selenoid
-
-<p align="center">
-  <img src="img/QAG13 GIF.gif" alt="video" width="1000">
-</p>
